@@ -29,9 +29,6 @@ def local_css(file_name):
 # Provide the path to the style.css file
 style_css_path = r"C:\Users\Admin\Documents\MLAI\-INFO8665\project2\docs\assets\style.css"
 local_css(style_css_path)
-#
-st.sidebar.image(r'C:\Users\Admin\Documents\MLAI\INFO8665\project2\image\images2.jpg', use_column_width=True)
-#
 # JPMorgan Chase & Co. (JPM) - Ticker Symbol: JPM
 # Bank of America Corporation (BAC) - Ticker Symbol: BAC
 # Wells Fargo & Company (WFC) - Ticker Symbol: WFC
