@@ -83,7 +83,7 @@ selected_options = {
 button_clicked = st.sidebar.button("Analyze")
 
 # Summary button
-summary_clicked = st.sidebar.button("Adv.Anlyz")
+summary_clicked = st.sidebar.button("OsTron")
 
 # Function to handle analysis
 def handle_analysis(selected_stock, analysis_type, start_date, end_date):
