@@ -1,112 +1,129 @@
-# Stock Market Analysis and Prediction Web App
+Stock Market Analysis and Prediction Web App
+Objective
+This project is a comprehensive Streamlit web application designed to cater to different user needs for analyzing and predicting stock market data. It provides tools for real-time market data integration, advanced analytics, and educational resources for finance students. The application features sophisticated data retrieval, visualization, and machine learning capabilities to deliver actionable insights and enhance the learning experience.
 
-## Objective
-This project is a Streamlit web application designed for analyzing and predicting stock market data. The application provides various features for visualizing stock performance and predicting future prices using an LSTM model.
+Use Cases
+1. Real-Time Market Data Integration
+Enhancing the platform with the capability to integrate and display real-time market data, perform comparative model analysis, and deliver actionable recommendations.
 
-## Features
+Features
+Real-Time Data Retrieval: Fetch live stock market data using reliable APIs.
+Model Comparison: Evaluate and justify the selection of machine learning models.
+Baseline ML Model: Develop, train, and achieve baseline performance with initial models.
+Real-Time Visualization: Display live data and predictions through dynamic visualizations.
+User Interface: Provide buy, hold, or sell recommendations via a user-friendly interface.
+User Feedback Integration: Collect and incorporate feedback to refine model and interface.
+Comprehensive Documentation: Prepare and review detailed project documentation.
+Task Breakdown
+Identify Reliable Market Data APIs
 
-### Stock Data Retrieval
-- Utilizes `yfinance` to fetch historical stock data.
-- Predefined list of popular stock tickers: `AAPL`, `META`, `NVDA`, `NFLX`.
-- Users can select multiple stock tickers for analysis.
+Activity: Research and integrate reliable APIs for fetching real-time market data.
+Acceptance Criteria: APIs are integrated and successfully fetch real-time data.
+Develop Scripts for Data Ingestion
 
-### User Inputs
-- **Stock Tickers Selection**: Choose from predefined popular tickers or input custom tickers.
-- **Date Range Selection**: Customize the start and end dates for analysis.
-- **Analysis Type Selection**: Options include Closing Prices, Volume, Moving Averages, Daily Returns, Correlation Heatmap, and Distribution of Daily Changes.
-- **Additional Information Options**: Users can opt to display Stock Actions, Quarterly Financials, Institutional Shareholders, Quarterly Balance Sheet, Quarterly Cashflow, Analysts Recommendation, and Predicted Prices.
+Activity: Write scripts to ingest and process data from APIs.
+Acceptance Criteria: Data is ingested and stored in a usable format for further processing.
+Implement Model Comparison and Justification
 
-### Data Visualization
-- **Closing Prices**: Line chart visualization.
-- **Volume**: Line chart visualization.
-- **Moving Averages**: Line charts of 20-day and 50-day moving averages.
-- **Daily Returns**: Line chart of the daily returns.
-- **Correlation Heatmap**: Heatmap of correlations between selected stocks.
-- **Distribution of Daily Changes**: Histogram of daily changes in stock prices.
+Activity: Conduct comparative analysis of various ML models.
+Acceptance Criteria: Selected model is justified with documented performance metrics.
+Develop Baseline ML Model
 
-### Additional Information
-- **Stock Actions**: Corporate actions such as dividends and stock splits.
-- **Quarterly Financials**: Financial reports on a quarterly basis.
-- **Institutional Shareholders**: Information on major shareholders.
-- **Quarterly Balance Sheet**: Quarterly balance sheet data.
-- **Quarterly Cashflow**: Quarterly cash flow data.
-- **Analysts Recommendation**: Recommendations and ratings from financial analysts.
+Activity: Train an initial ML model on historical data to achieve baseline performance.
+Acceptance Criteria: Model achieves a predefined performance metric and is documented.
+Implement Real-Time Data Visualization
 
-### Price Prediction
-- **LSTM Model**: Predict future stock prices using an LSTM model.
-  - Historical data is scaled and split into training and test sets.
-  - Model trained on 95% of data and validated on the remaining 5%.
-  - Predictions are visualized alongside actual prices.
-### Advanced Analysis:
-- **Chaikin Oscillator
-- **Stochastic Oscillator
-- **Stochastic Oscillator and Price
-- **MACD (Moving Average Convergence Divergence)
-- **RSI (Relative Strength Index)
+Activity: Develop visualizations for real-time data and predictions.
+Acceptance Criteria: Visualizations update dynamically with live data.
+Create User Interface for Recommendations
 
-## Task Breakdown
-1. **Identify reliable market data APIs**
-2. **Develop scripts/tools for data ingestion**
-3. **Clean and preprocess collected data**
-4. **Standardize data formats**
-5. **Explore data visualization techniques**
-6. **Perform exploratory data analysis (EDA)**
-7. **Extract relevant features from raw financial data**
-8. **Implement data transformation techniques**
-9. **Split the preprocessed data into training, validation, and test sets**
-10. **Document data collection and preprocessing procedures**
-    - Keep thorough documentation of each step for reproducibility.
+Activity: Develop UI to display buy, hold, or sell recommendations.
+Acceptance Criteria: UI is intuitive and provides clear recommendations based on model predictions.
+Collect and Integrate User Feedback
 
-## Documentation
+Activity: Gather feedback from at least five users and make necessary adjustments.
+Acceptance Criteria: Feedback is documented, and improvements are made.
+Prepare Comprehensive Documentation
 
-### Data Collection
-- Data sourced from Yahoo Finance using `yfinance` library.
-- Predefined list of popular stock tickers: `AAPL`, `META`, `NVDA`, `NFLX`.
-- Customizable time period via user input.
+Activity: Document user stories, development process, and technical details.
+Acceptance Criteria: Documentation is reviewed and approved by team members.
+2. Advanced Analytics Tools
+Enhancing the platform's analytical capabilities by integrating advanced tools and features to provide deeper insights into stock market data.
 
-### Data Preprocessing
-- Filled missing values using forward fill.
-- Added moving averages (20-day and 50-day) for selected analysis.
-- Calculated daily returns and daily changes.
+Features
+Advanced Machine Learning Models: Integration of sophisticated ML models to improve prediction accuracy.
+Enhanced Data Visualization: Implement advanced techniques for better understanding of complex data.
+Additional Analytical Functions: Integrate features like trend and sentiment analysis.
+Real-Time Monitoring Dashboard: Add new features and customizable metrics to the dashboard.
+Iterative Improvement from User Feedback: Collect feedback and refine features for better user experience.
+Comprehensive Documentation and Training: Prepare user guides and training materials.
+Rigorous Testing and Validation: Ensure the accuracy and reliability of the new tools.
+Managed Deployment and Release: Deploy the updated platform with robust release management.
+Task Breakdown
+Integrate Advanced Machine Learning Models
 
-### Data Standardization
-- Ensured consistent date format.
-- Handled missing values using appropriate methods.
+Activity: Research and integrate advanced ML models to enhance predictive capabilities.
+Acceptance Criteria: Models are integrated and show improved performance metrics.
+Implement Advanced Data Visualization Techniques
 
-### Data Visualization
-- **Closing Prices**: Line chart of the closing prices.
-- **Volume**: Line chart of the trading volume.
-- **Moving Averages**: Line charts of 20-day and 50-day moving averages.
-- **Daily Returns**: Line chart of the daily returns.
-- **Correlation Heatmap**: Heatmap of the correlations between selected stocks.
-- **Distribution of Daily Changes**: Histogram of the daily changes in stock prices.
+Activity: Develop visualizations for complex data analysis.
+Acceptance Criteria: Visualizations provide clear insights into data trends and patterns.
+Develop Additional Analytical Functionalities
 
-### Feature Extraction
-- Calculated daily returns and moving averages.
-- Analyzed correlations between stock returns using heatmaps.
+Activity: Implement features for trend analysis, sentiment analysis, etc.
+Acceptance Criteria: New functionalities are operational and integrated into the platform.
+Enhance Real-Time Monitoring Dashboard
 
-### Data Splitting
-- Split data into training and test sets for model validation.
+Activity: Add new features and customizable metrics to the dashboard.
+Acceptance Criteria: Dashboard reflects real-time data with enhanced metrics.
+Collect and Analyze User Feedback
 
-### Model Building
-- **LSTM Model for Price Prediction**:
-  - Built an LSTM model using `keras` to predict future stock prices.
-  - Trained on 95% of historical data and tested on the remaining 5%.
+Activity: Gather user feedback and refine features accordingly.
+Acceptance Criteria: Feedback is analyzed, and platform improvements are implemented.
+Prepare Comprehensive Documentation and Training Materials
 
-## Conclusion
-This project provided a comprehensive analysis of stock market data using Python. Key takeaways include:
-- Retrieving and processing stock data using `yfinance`.
-- Visualizing stock data trends with `matplotlib` and `seaborn`.
-- Implementing an LSTM model to predict future stock prices.
-- Evaluating additional financial information for deeper insights.
+Activity: Document new features and prepare training materials.
+Acceptance Criteria: Documentation and training materials are clear and comprehensive.
+Conduct Rigorous Testing and Validation
 
-By leveraging these techniques, users can gain a better understanding of stock performance and make informed investment decisions.
+Activity: Perform extensive testing to validate new features.
+Acceptance Criteria: All new features pass testing and validation criteria.
+Manage Deployment and Release
 
-## References
-- [Investopedia on Correlation](https://www.investopedia.com/terms/c/correlation.asp)
-- [Stock Data Analysis Project](https://medium.com/@ethan.duong1120/stock-data-analysis-project-python-1bf2c51b615f)
-- [Streamlit Documentation]  (https://streamlit.io/gallery)
-- [Mozilla Developer Network (MDN) Web Docs] (https://developer.mozilla.org/en-US/docs/Web)
+Activity: Deploy the platform updates following established release processes.
+Acceptance Criteria: Deployment is successful with minimal downtime.
+3. Educational Tool for Finance Students
+Dedicated to creating and enhancing educational tools and resources to help finance students understand and analyze stock market data.
 
----
- 
+Features
+Interactive Learning Tools: Design interactive features to facilitate learning.
+Integration of Historical Data: Provide historical data for analysis and practice.
+Simulation Tools for Strategy Testing: Develop tools to simulate and test financial strategies.
+Tutorials and Educational Content: Create engaging tutorials and content for key finance concepts.
+User Feedback for Continuous Improvement: Collect feedback to enhance learning tools.
+Thorough Documentation: Maintain comprehensive documentation and tutorials for users.
+Task Breakdown
+Design Interactive Features for Learning
+
+Activity: Develop and document interactive learning features.
+Acceptance Criteria: Features are designed with diagrams/mockups and reviewed by a team member.
+Integrate Historical Data for Analysis
+
+Activity: Integrate historical stock data into the educational tool.
+Acceptance Criteria: Historical data is correctly integrated and validated.
+Develop Simulation Tools for Strategy Testing
+
+Activity: Create and integrate tools to simulate and test financial strategies.
+Acceptance Criteria: Tools are functional and tested with various strategies.
+Create Tutorials and Educational Content
+
+Activity: Develop tutorials and educational content covering key finance concepts.
+Acceptance Criteria: Content is clear, engaging, and reviewed by experts.
+Collect and Analyze User Feedback
+
+Activity: Gather feedback from users and iterate on the educational content and tools.
+Acceptance Criteria: Feedback is used to make meaningful improvements.
+Prepare and Maintain Documentation
+
+Activity: Document all features and provide detailed user guides.
+Acceptance Criteria: Documentation is thorough and accessible to all users.
