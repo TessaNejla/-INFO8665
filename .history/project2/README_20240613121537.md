@@ -1,0 +1,119 @@
+# Stock Market Analysis and Prediction Web App
+
+# -INFO8665
+# -Tessa Nejla Ayvazoglu
+Projects in Machine Learning
+# Stock Market Analysis and Prediction Web App
+
+# TESSA AYVAZOGLU
+
+## Objective
+This project is a Streamlit web application designed for analyzing and predicting stock market data. The application provides various features for visualizing stock performance and predicting future prices using an LSTM model.
+
+## Features
+
+### Stock Data Retrieval
+- Utilizes `yfinance` to fetch historical stock data.
+- Predefined list of popular stock tickers: `AAPL`, `META`, `NVDA`, `NFLX`.
+- Users can select multiple stock tickers for analysis.
+
+### User Inputs
+- **Stock Tickers Selection**: Choose from predefined popular tickers or input custom tickers.
+- **Date Range Selection**: Customize the start and end dates for analysis.
+- **Analysis Type Selection**: Options include Closing Prices, Volume, Moving Averages, Daily Returns, Correlation Heatmap, and Distribution of Daily Changes.
+- **Additional Information Options**: Users can opt to display Stock Actions, Quarterly Financials, Institutional Shareholders, Quarterly Balance Sheet, Quarterly Cashflow, Analysts Recommendation, and Predicted Prices.
+
+### Data Visualization
+- **Closing Prices**: Line chart visualization.
+- **Volume**: Line chart visualization.
+- **Moving Averages**: Line charts of 20-day and 50-day moving averages.
+- **Daily Returns**: Line chart of the daily returns.
+- **Correlation Heatmap**: Heatmap of correlations between selected stocks.
+- **Distribution of Daily Changes**: Histogram of daily changes in stock prices.
+
+### Additional Information
+- **Stock Actions**: Corporate actions such as dividends and stock splits.
+- **Quarterly Financials**: Financial reports on a quarterly basis.
+- **Institutional Shareholders**: Information on major shareholders.
+- **Quarterly Balance Sheet**: Quarterly balance sheet data.
+- **Quarterly Cashflow**: Quarterly cash flow data.
+- **Analysts Recommendation**: Recommendations and ratings from financial analysts.
+
+### Price Prediction
+- **LSTM Model**: Predict future stock prices using an LSTM model.
+  - Historical data is scaled and split into training and test sets.
+  - Model trained on 95% of data and validated on the remaining 5%.
+  - Predictions are visualized alongside actual prices.
+### Advanced Analysis:
+- **Chaikin Oscillator
+- **Stochastic Oscillator
+- **Stochastic Oscillator and Price
+- **MACD (Moving Average Convergence Divergence)
+- **RSI (Relative Strength Index)
+
+## Task Breakdown
+1. **Identify reliable market data APIs**
+2. **Develop scripts/tools for data ingestion**
+3. **Clean and preprocess collected data**
+4. **Standardize data formats**
+5. **Explore data visualization techniques**
+6. **Perform exploratory data analysis (EDA)**
+7. **Extract relevant features from raw financial data**
+8. **Implement data transformation techniques**
+9. **Split the preprocessed data into training, validation, and test sets**
+10. **Document data collection and preprocessing procedures**
+    - Keep thorough documentation of each step for reproducibility.
+
+## Documentation
+
+### Data Collection
+- Data sourced from Yahoo Finance using `yfinance` library.
+- Predefined list of popular stock tickers: `AAPL`, `META`, `NVDA`, `NFLX`.
+- Customizable time period via user input.
+
+### Data Preprocessing
+- Filled missing values using forward fill.
+- Added moving averages (20-day and 50-day) for selected analysis.
+- Calculated daily returns and daily changes.
+
+### Data Standardization
+- Ensured consistent date format.
+- Handled missing values using appropriate methods.
+
+### Data Visualization
+- **Closing Prices**: Line chart of the closing prices.
+- **Volume**: Line chart of the trading volume.
+- **Moving Averages**: Line charts of 20-day and 50-day moving averages.
+- **Daily Returns**: Line chart of the daily returns.
+- **Correlation Heatmap**: Heatmap of the correlations between selected stocks.
+- **Distribution of Daily Changes**: Histogram of the daily changes in stock prices.
+
+### Feature Extraction
+- Calculated daily returns and moving averages.
+- Analyzed correlations between stock returns using heatmaps.
+
+### Data Splitting
+- Split data into training and test sets for model validation.
+
+### Model Building
+- **LSTM Model for Price Prediction**:
+  - Built an LSTM model using `keras` to predict future stock prices.
+  - Trained on 95% of historical data and tested on the remaining 5%.
+
+## Conclusion
+This project provided a comprehensive analysis of stock market data using Python. Key takeaways include:
+- Retrieving and processing stock data using `yfinance`.
+- Visualizing stock data trends with `matplotlib` and `seaborn`.
+- Implementing an LSTM model to predict future stock prices.
+- Evaluating additional financial information for deeper insights.
+
+By leveraging these techniques, users can gain a better understanding of stock performance and make informed investment decisions.
+
+## References
+- [Investopedia on Correlation](https://www.investopedia.com/terms/c/correlation.asp)
+- [Stock Data Analysis Project](https://medium.com/@ethan.duong1120/stock-data-analysis-project-python-1bf2c51b615f)
+- [Streamlit Documentation]  (https://streamlit.io/gallery)
+- [Mozilla Developer Network (MDN) Web Docs] (https://developer.mozilla.org/en-US/docs/Web)
+
+---
+ 
